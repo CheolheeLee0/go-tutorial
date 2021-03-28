@@ -10,7 +10,7 @@ import (
 func main() {
 	router := gin.Default()
 
-	// routing
+	// ○ routing 
 
 	// router.GET("/someGet", getting)
 	// router.POST("/somePost", posting)

@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-
+// Postman에서 코드 복사 붙여넣음
   url := "http://localhost:8080/videos"
   method := "GET"
 
@@ -22,6 +22,7 @@ func main() {
     fmt.Println(err)
     return
   }
+  // pragmatic:reviews -> base64 encoding -> cHJhZ21hdGljOnJldmlld3M=
   req.Header.Add("Authorization", "Basic cHJhZ21hdGljOnJldmlld3M=")
   req.Header.Add("Content-Type", "application/json")
 
